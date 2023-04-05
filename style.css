@@ -1,0 +1,230 @@
+body {
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.every img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+
+.every .header .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+    margin: 10px;
+}
+
+.every .header .logo {
+    margin: 30px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+
+.every .header .logo .redes li {
+    margin: 10px;
+    left: 1100px;
+    font-size: 30px;
+    white-space: nowrap;
+    display: flex;
+    bottom: 19px;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.every .header .logo .redes li a {
+    color: black;
+}
+
+.every .header .logo .redes {
+    display: flex;
+    font-size: 20px;
+    position: absolute;
+}
+
+.every .meio img {
+    break-inside: avoid;
+    position: absolute;
+    width: 520px;
+    height: 800px;
+    left: 100px;
+    background-size: cover;
+    top: 120px;
+    mix-blend-mode: darken;
+}
+
+.every .dinner {
+    display: block;
+    width: 400px;
+    height: 100vh;
+    top: 270px;
+    left: 800px;
+    position: absolute;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.every .dinner h1 {
+    font-size: 80px;
+    white-space: nowrap;
+    margin: 20px;
+}
+
+.every .dinner h2 {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.every .dinner p {
+    font-size: 30px;
+    width: 900px;
+    margin: 20px;
+    position: relative;
+}
+
+.every .dinner .contato input {
+    font-size: 25px;
+}
+
+.every .dinner .contato {
+    width: 800px;
+    margin: 20px;
+}
+
+.every .dinner .contato a {
+    padding: 7px;
+    width: 300px;
+    font-size: 25px;
+    height: 25px;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.every .meio .dinner .contato a:hover {
+    background-color: black;
+    transition: 1.4s;
+    color: #fff;
+}
+
+.every .fundo h2 {
+    position: absolute;
+    top: 900px;
+    left: 700px;
+}
+
+@media screen and (max-width:1500px){
+    .every img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .every .meio img{ 
+        position: relative;
+    }
+
+    .every .dinner{
+        position: relative;
+        display: block;
+    }
+
+    .fundo {
+        display: flex;
+        align-items: flex-start;
+        white-space: nowrap;
+        top: 1800px;
+        right: 900px;
+        position: relative;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .every img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .every .meio img{
+        position: relative;
+        left: -0%; 
+        align-items: center;
+        display: flex;
+        bottom: 70%;
+    }
+
+    .dinner {
+        display: flex;
+        position: relative;
+        right:  40%;
+    }
+
+    .fundo {
+        display: flex;
+        align-items: flex-start;
+        white-space: nowrap;
+        top: 1800px;
+        right: 900px;
+        position: relative;
+        font-size: 15px;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .every {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .every .dinner {
+        display: flex;
+        position: relative;
+        text-align: end;
+    }
+
+    .redes {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        right: 50px;
+    }
+
+    .every img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .meio img {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fundo {
+        display: flex;
+        align-items: flex-start;
+        white-space: nowrap;
+        top: 1800px;
+        right: 900px;
+        width: 500px;
+        position: relative;
+        font-size: 15px;
+    }
+}
